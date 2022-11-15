@@ -2,6 +2,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyparser = require('body-parser');
 const flash = require('connect-flash');
+const cors = require("cors");
 const ejs = require('ejs');
 const dotenv = require('dotenv').config();
 
@@ -21,6 +22,7 @@ app.use(express.static('./public'));
 app.use(bodyparser.urlencoded({
      extended: false
 }));
+app.use(cors());
 app.use(bodyparser.json());
 app.use(flash());
 // app.use((req, res, next) => {
