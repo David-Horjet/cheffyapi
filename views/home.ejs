@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Important meta-tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Webpage title -->
+  <title>Cheffy Restaurant | HomePage</title>
+
+  <!-- fav-icons links -->
+  <link rel="shortcut icon" href="./images/images.jpeg" type="image/x-icon" />
+
+  <!-- bootstrap css linking -->
+  <link rel="stylesheet" href="./css/bootsrap css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/bootsrap css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/bootsrap css/bootstrap-utilities.css" />
+
+  <!-- <link rel="stylesheet" href="./aos/aos.css"> -->
+
+  <!-- bootstrap icon linking -->
+  <link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css" />
+
+  <!-- main css link -->
+  <link rel="stylesheet" href="./css/main/style.css" />
+  <link rel="stylesheet" href="./css/main/responsiveness.css">
+</head>
+
+<body>
+  <div class="wrrapper">
+    <!-- preloader -->
+    <div class="pre-loader"></div>
+    <!-- end pre-loader -->
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- End Back to top button -->
+
+
+
+    <!-- header -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="logo me-auto me-lg-0"><a href="/">Cheffy</a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul class="d-flex align-items-center">
+            <li><a class="nav-link active" href="#hero">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#menu">Menu</a></li>
+            <li><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li><a class="nav-link" href="#team">Team</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <i onclick="open()" class="bi bi-list hamburger"></i>
+        <!-- .navbar -->
+        <a href="#explore" class="explore scrollto d-none d-lg-flex">Explore</a>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Hero Page -->
+    <section id="hero" class="hero">
+      <div class="container position-relative text-center text-lg-start">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1>Welcome to <span>Cheffy</span></h1>
+            <p class="pb-3">
+              We deliver your foods in munutes without wasting time
+            </p>
+
+            <div class="btns">
+              <a href="#explore" class="explore scrolltod-lg-flex">Explore</a>
+            </div>
+          </div>
+          <div class="image col-lg-6 align-items-center justify-content-center py-5">
+            <img src="./images/hero.png" alt="hero">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Page -->
+
+    <!-- About Page -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h1 class="text-center">About Us</h1>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Cheffy is a very nice Restaurant which provides you with the
+              very best quality foods and drinks. They are the number one
+              restaurant in Nigeria and also competing with the best in the
+              world
+            </p>
+            <span>Our Restaurant:</span>
+            <ul>
+              <li>
+                <i class="bi bi-check-circle"></i>Very cool and Ventilated
+                Area with no dirts
+              </li>
+              <li>
+                <i class="bi bi-check-circle"></i> Fast food delivery with no
+                wasting of time
+              </li>
+              <li>
+                <i class="bi bi-check-circle"></i> Ullamco laboris nisi ut
+                aliquip ex ea commodo consequat
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p class="pb-5">
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Page -->
+
+    <!-- Service Start -->
+    <section class="py-5" id="service">
+     <div class="container">
+          <div class="row g-4">
+            <div class="box col-lg-3 col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="bi bi-cart mb-5"></i>
+                  <h5 class="text-white">Master Chefs</h5>
+                  <p>
+                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed
+                    clita amet diam
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="bi bi-check-circle mb-4"></i>
+                  <h5 class="text-white">Quality Food</h5>
+                  <p>
+                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed
+                    clita amet diam
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="bi bi-cart mb-4"></i>
+                  <h5 class="text-white">Online Order</h5>
+                  <p>
+                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed
+                    clita amet diam
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="box col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="service-item rounded pt-3">
+                <div class="p-4">
+                  <i class="bi bi-clock mb-4"></i>
+                  <h5 class="text-white">24/7 Service</h5>
+                  <p>
+                    Diam elitr kasd sed at elitr sed ipsum justo dolor sed
+                    clita amet diam
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Service End -->
+
+    <!--  Menu Section  -->
+    <section id="menu" class="">
+      <div class="container">
+
+        <div class="section-title">
+          <h1 class="text-white">Check Our Tasty Menu</h1>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li class=" filter-active">All</li>
+              <li >Starters</li>
+              <li >Salads</li>
+              <li >Specialty</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="./images/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Lobster Bisque</a><span>$5.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="./images/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Bread Barrel</a><span>$6.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="./images/img/menu/cake.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Crab Cake</a><span>$7.95</span>
+            </div>
+            <div class="menu-ingredients">
+              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="./images/img/menu/caesar.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Caesar Selections</a><span>$8.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="./images/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Tuscan Grilled</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="./images/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Mozzarella Stick</a><span>$4.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="./images/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Greek Salad</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach, crisp romaine, tomatoes, and Greek olives
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="./images/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Spinach Salad</a><span>$9.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="./images/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a href="#">Lobster Roll</a><span>$12.95</span>
+            </div>
+            <div class="menu-ingredients">
+              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="text-center section-title">
+          <h1 class="text-white">Contact</h1>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>
+                  Monday-Saturday:<br>
+                  11:00 AM - 2300 PM
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="/" method="post" role="form" class="form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center mt-3"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+  
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Cheffy</h3>
+                <p>
+                  B567A St Luke's Street <br>
+                  Austin Texas, USA<br><br>
+                  <strong>Phone:</strong> +1 4347 78588 89<br>
+                  <strong>Email:</strong> cheffy@gmail.com<br>
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <p>Subscribe to our Newsletter to be the first person to know about our new menu updates</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+  
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Cheffy</span></strong> 2022 All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- bootstrap js link -->
+  <script src="./js/boostrap js/bootstrap.bundle.min.js"></script>
+  <script src="./js/boostrap js/bootstrap.js"></script>
+
+  <!-- main js link -->
+  <script src="./js/main/app.js"></script>
+  <!-- <script src="./aos/aos.js"></script> -->
+</body>
+
+</html>

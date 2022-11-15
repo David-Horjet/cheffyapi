@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+     .navbar{
+          position: absolute;
+          display: none;
+          top: 50px;
+          left: 0;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 0.915);
+     }
+
+     .navbar ul {
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+          gap: 30px;
+     }
+
+     .hamburger {
+          display: block;
+     }
+}
+
+@media (max-width: 576px) {
+     .hero h1 {
+          font-size: 45px;
+     }
+}
