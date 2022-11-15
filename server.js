@@ -96,7 +96,7 @@ app.post('/', async (req, res) => {
     }
   </style>
   <body>
-    <div class="wrapper" style="background-color: rgb(22,21,41);">
+    <div class="wrapper">
       <div class="image">
         <img src="" alt="" />
       </div>
@@ -140,7 +140,7 @@ app.post('/', async (req, res) => {
           to: EMAIL, // list of receivers
           subject: req.body.subject, // Subject line
           text: "Co-creatives has sent you a contact message", // plain text body
-          html: res.se, // html body
+          html: emailToSend, // html body
      };
 
      transporter.sendMail(mailOptions, (error, info) => {
