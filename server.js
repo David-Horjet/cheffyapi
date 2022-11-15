@@ -59,10 +59,10 @@ app.post('/', async (req, res) => {
 
      // send mail with defined transport object
      let mailOptions = {
-          from: 'davidojetola956@gmail.com', // sender address
-          to: "davidhorjet@gmail.com", // list of receivers
-          subject: "Hello ✔ From Cheffy Contact Request", // Subject line
-          text: "Cheffy has sent you a contact message", // plain text body
+          from: req.body.email,// sender address
+          to: EMAIL, // list of receivers
+          subject: "Hello ✔ From Co-creatives Contact Request"+req.body.subject, // Subject line
+          text: "Co-creatives has sent you a contact message", // plain text body
           html: output, // html body
      };
 
