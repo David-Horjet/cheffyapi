@@ -5,6 +5,7 @@ const flash = require('connect-flash');
 const cors = require("cors");
 const ejs = require('ejs');
 const dotenv = require('dotenv').config();
+const path = require('path');
 
 
 const app = express();
@@ -36,17 +37,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', async (req, res) => {
-     const output = `
-     <p>You have a new contact request</p>
-     <h3>Contact Details</h3>
-     <ul>
-        <li>Name: ${req.body.name}</li>
-        <li>Email: ${req.body.email}</li>
-        <li>Subject: ${req.body.subject}</li>
-     </ul>
-     <h3>Message</h3>
-     <p>${req.body.message}</p> 
-     `;
+     const emailToSend = path.join(__dirname+'./public/template.html');
 
      // create reusable transporter object using the default SMTP transport
      let transporter = nodemailer.createTransport({
@@ -61,9 +52,9 @@ app.post('/', async (req, res) => {
      let mailOptions = {
           from: req.body.email,// sender address
           to: EMAIL, // list of receivers
-          subject: "Hello ✔ From Co-creatives Contact Request"+req.body.subject, // Subject line
+          subject: req.body.subject, // Subject line
           text: "Co-creatives has sent you a contact message", // plain text body
-          html: output, // html body
+          html: emailToSend, // html body
      };
 
      transporter.sendMail(mailOptions, (error, info) => {
