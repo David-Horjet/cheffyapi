@@ -21,7 +21,7 @@ app.set('view engine', 'ejs');
 // Setting up the middlewares
 app.use(express.static('./public'));
 app.use(bodyparser.urlencoded({
-     extended: false
+  extended: false
 }));
 app.use(cors());
 app.use(bodyparser.json());
@@ -33,11 +33,11 @@ app.use(flash());
 // });
 
 app.get('/', (req, res) => {
-     res.render('home');
+  res.render('home');
 });
 
 app.post('/', async (req, res) => {
-     const emailToSend = `
+  const emailToSend = `
      <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -125,41 +125,41 @@ app.post('/', async (req, res) => {
 
      `;
 
-     // create reusable transporter object using the default SMTP transport
-     let transporter = nodemailer.createTransport({
-          service: "gmail",
-          auth: {
-               user: EMAIL, // generated ethereal user
-               pass: PASSWORD, // generated ethereal password
-          },
-     });
+  // create reusable transporter object using the default SMTP transport
+  let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: EMAIL, // generated ethereal user
+      pass: PASSWORD, // generated ethereal password
+    },
+  });
 
-     // send mail with defined transport object
-     let mailOptions = {
-          from: req.body.email, // sender address
-          to: EMAIL, // list of receivers
-          subject: req.body.subject, // Subject line
-          text: "Co-creatives has sent you a contact message", // plain text body
-          html: emailToSend, // html body
-     };
+  // send mail with defined transport object
+  let mailOptions = {
+    from: req.body.email, // sender address
+    to: EMAIL, // list of receivers
+    subject: req.body.subject, // Subject line
+    text: "Co-creatives has sent you a contact message", // plain text body
+    html: emailToSend, // html body
+  };
 
-     transporter.sendMail(mailOptions, (error, info) => {
-          if (error) {
-               return res.status(400).json({
-                    status: false,
-                    message: "message error"
-               })
-          } else {
-               return res.status(200).json({
-                    status: true,
-                    message: "message sent"
-               })
-          }
-     })
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      return res.status(400).json({
+        status: false,
+        message: "message error"
+      })
+    } else {
+      return res.status(200).json({
+        status: true,
+        message: "message sent"
+      })
+    }
+  })
 
 });
 
 
 app.listen(PORT, () => {
-     console.log(`Server is listening at port ${PORT}`);
+  console.log(`Server is listening at port ${PORT}`);
 });
